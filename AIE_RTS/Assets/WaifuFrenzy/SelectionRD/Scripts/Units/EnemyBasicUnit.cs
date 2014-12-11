@@ -26,12 +26,15 @@ public class EnemyBasicUnit : MonoBehaviour {
     public float FireRate = 1.0f;
     private float NextFire = 0.0f;
 
+    public GroupManager Group;
+
     // Use this for initialization
     void Start()
     {
         Health = MaxHealth;
         renderer.material.color = Color.red;
         GameObject eek = GameObject.FindGameObjectWithTag("Finish");
+        Group = FindObjectOfType<GroupManager>();
         Agent.SetDestination(eek.gameObject.transform.position);
     }
 
@@ -68,7 +71,7 @@ public class EnemyBasicUnit : MonoBehaviour {
             if (hits[i].collider.tag == "PlayerUnit")
             {
                 NextFire = Time.time + FireRate;
-                hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5);
+                hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5, Group);
             }
         }
     }

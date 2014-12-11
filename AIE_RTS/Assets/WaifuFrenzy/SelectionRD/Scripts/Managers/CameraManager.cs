@@ -62,19 +62,19 @@ public class CameraManager : MonoBehaviour {
     {
         if(Input.GetKey(KeyCode.UpArrow))
         {
-            this.transform.position += new Vector3(0, 0, 10) * Time.deltaTime;
+            this.transform.position += new Vector3(0, 0, 30) * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            this.transform.position += new Vector3(0, 0, -10) * Time.deltaTime;
+            this.transform.position += new Vector3(0, 0, -30) * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.position += new Vector3(-10, 0, 0) * Time.deltaTime;
+            this.transform.position += new Vector3(-30, 0, 0) * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.position += new Vector3(10, 0, 0) * Time.deltaTime;
+            this.transform.position += new Vector3(30, 0, 0) * Time.deltaTime;
         }
 
         // Scroll mouse down

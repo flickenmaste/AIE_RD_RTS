@@ -32,7 +32,7 @@ public class EnemyBasicUnit : MonoBehaviour {
     void Start()
     {
         Health = MaxHealth;
-        renderer.material.color = Color.red;
+        //renderer.material.color = Color.red;
         GameObject eek = GameObject.FindGameObjectWithTag("Finish");
         Group = FindObjectOfType<GroupManager>();
         Agent.SetDestination(eek.gameObject.transform.position);

@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 37e6641eb38854e45a06e27657e82e05
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bace
+    100002: Body
+    100004: Character1_Head
+    100006: Character1_Hips
+    100008: Character1_LeftFoot
+    100010: Character1_LeftLeg
+    100012: Character1_LeftToeBase
+    100014: Character1_LeftToeBase1
+    100016: Character1_LeftUpLeg
+    100018: Character1_Reference
+    100020: Character1_RightFoot
+    100022: Character1_RightLeg
+    100024: Character1_RightToeBase
+    100026: Character1_RightToeBase1
+    100028: Character1_RightUpLeg
+    100030: Character1_Spine
+    100032: Character1_Spine1
+    100034: ikHandle1
+    100036: ikHandle2
+    100038: ikHandle3
+    100040: ikHandle4
+    100042: ikHandle5
+    100044: ikHandle6
+    100046: L_Foot
+    100048: L_Foot 1
+    100050: L_Launcher
+    100052: L_Leg
+    100054: L_Shin
+    100056: L_Thy
+    100058: LB_Toes
+    100060: LF_Toes
+    100062: Mech
+    100064: //RootNode
+    100066: Pelvece
+    100068: Pelvice
+    100070: R_Foot
+    100072: R_Foot 1
+    100074: R_Launcher
+    100076: R_Leg
+    100078: R_Shin
+    100080: R_Thy
+    100082: RB_Toes
+    100084: RF_Toes
+    100086: Torso
+    100088: Waist
+    400000: Bace
+    400002: Body
+    400004: Character1_Head
+    400006: Character1_Hips
+    400008: Character1_LeftFoot
+    400010: Character1_LeftLeg
+    400012: Character1_LeftToeBase
+    400014: Character1_LeftToeBase1
+    400016: Character1_LeftUpLeg
+    400018: Character1_Reference
+    400020: Character1_RightFoot
+    400022: Character1_RightLeg
+    400024: Character1_RightToeBase
+    400026: Character1_RightToeBase1
+    400028: Character1_RightUpLeg
+    400030: Character1_Spine
+    400032: Character1_Spine1
+    400034: ikHandle1
+    400036: ikHandle2
+    400038: ikHandle3
+    400040: ikHandle4
+    400042: ikHandle5
+    400044: ikHandle6
+    400046: L_Foot
+    400048: L_Foot 1
+    400050: L_Launcher
+    400052: L_Leg
+    400054: L_Shin
+    400056: L_Thy
+    400058: LB_Toes
+    400060: LF_Toes
+    400062: Mech
+    400064: //RootNode
+    400066: Pelvece
+    400068: Pelvice
+    400070: R_Foot
+    400072: R_Foot 1
+    400074: R_Launcher
+    400076: R_Leg
+    400078: R_Shin
+    400080: R_Thy
+    400082: RB_Toes
+    400084: RF_Toes
+    400086: Torso
+    400088: Waist
+    4300000: L_Launcher
+    4300002: R_Launcher
+    4300004: Body
+    4300006: Waist
+    4300008: Pelvice
+    4300010: L_Leg
+    4300012: L_Thy
+    4300014: L_Shin
+    4300016: L_Foot
+    4300018: R_Leg
+    4300020: R_Thy
+    4300022: R_Shin
+    4300024: R_Foot
+    4300026: LB_Toes
+    4300028: LF_Toes
+    4300030: RB_Toes
+    4300032: RF_Toes
+    7400000: Idle
+    7400002: Walking
+    9500000: //RootNode
+    13700000: Body
+    13700002: L_Foot 1
+    13700004: L_Launcher
+    13700006: L_Leg
+    13700008: L_Shin
+    13700010: L_Thy
+    13700012: LB_Toes
+    13700014: LF_Toes
+    13700016: Pelvice
+    13700018: R_Foot 1
+    13700020: R_Launcher
+    13700022: R_Leg
+    13700024: R_Shin
+    13700026: R_Thy
+    13700028: RB_Toes
+    13700030: RF_Toes
+    13700032: Waist
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bace
+        weight: 1
+      - path: Bace/Character1_Reference
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot/Character1_LeftToeBase
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot/Character1_LeftToeBase1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot/Character1_RightToeBase
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot/Character1_RightToeBase1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso/Character1_Spine1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso/Character1_Spine1/Character1_Head
+        weight: 1
+      - path: Bace/L_Foot
+        weight: 1
+      - path: Bace/L_Foot/ikHandle1
+        weight: 1
+      - path: Bace/L_Foot/ikHandle2
+        weight: 1
+      - path: Bace/L_Foot/ikHandle3
+        weight: 1
+      - path: Bace/R_Foot
+        weight: 1
+      - path: Bace/R_Foot/ikHandle4
+        weight: 1
+      - path: Bace/R_Foot/ikHandle5
+        weight: 1
+      - path: Bace/R_Foot/ikHandle6
+        weight: 1
+      - path: Mech
+        weight: 1
+      - path: Mech/Body
+        weight: 1
+      - path: Mech/L_Foot 1
+        weight: 1
+      - path: Mech/L_Launcher
+        weight: 1
+      - path: Mech/L_Leg
+        weight: 1
+      - path: Mech/L_Shin
+        weight: 1
+      - path: Mech/L_Thy
+        weight: 1
+      - path: Mech/LB_Toes
+        weight: 1
+      - path: Mech/LF_Toes
+        weight: 1
+      - path: Mech/Pelvice
+        weight: 1
+      - path: Mech/R_Foot 1
+        weight: 1
+      - path: Mech/R_Launcher
+        weight: 1
+      - path: Mech/R_Leg
+        weight: 1
+      - path: Mech/R_Shin
+        weight: 1
+      - path: Mech/R_Thy
+        weight: 1
+      - path: Mech/RB_Toes
+        weight: 1
+      - path: Mech/RF_Toes
+        weight: 1
+      - path: Mech/Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walking
+      takeName: Take 001
+      firstFrame: 49
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bace
+        weight: 1
+      - path: Bace/Character1_Reference
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot/Character1_LeftToeBase
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot/Character1_LeftToeBase1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot/Character1_RightToeBase
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot/Character1_RightToeBase1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso/Character1_Spine1
+        weight: 1
+      - path: Bace/Character1_Reference/Pelvece/Character1_Hips/Character1_Spine/Torso/Character1_Spine1/Character1_Head
+        weight: 1
+      - path: Bace/L_Foot
+        weight: 1
+      - path: Bace/L_Foot/ikHandle1
+        weight: 1
+      - path: Bace/L_Foot/ikHandle2
+        weight: 1
+      - path: Bace/L_Foot/ikHandle3
+        weight: 1
+      - path: Bace/R_Foot
+        weight: 1
+      - path: Bace/R_Foot/ikHandle4
+        weight: 1
+      - path: Bace/R_Foot/ikHandle5
+        weight: 1
+      - path: Bace/R_Foot/ikHandle6
+        weight: 1
+      - path: Mech
+        weight: 1
+      - path: Mech/Body
+        weight: 1
+      - path: Mech/L_Foot 1
+        weight: 1
+      - path: Mech/L_Launcher
+        weight: 1
+      - path: Mech/L_Leg
+        weight: 1
+      - path: Mech/L_Shin
+        weight: 1
+      - path: Mech/L_Thy
+        weight: 1
+      - path: Mech/LB_Toes
+        weight: 1
+      - path: Mech/LF_Toes
+        weight: 1
+      - path: Mech/Pelvice
+        weight: 1
+      - path: Mech/R_Foot 1
+        weight: 1
+      - path: Mech/R_Launcher
+        weight: 1
+      - path: Mech/R_Leg
+        weight: 1
+      - path: Mech/R_Shin
+        weight: 1
+      - path: Mech/R_Thy
+        weight: 1
+      - path: Mech/RB_Toes
+        weight: 1
+      - path: Mech/RF_Toes
+        weight: 1
+      - path: Mech/Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -28,6 +28,8 @@ public class EnemyBasicUnit : MonoBehaviour {
 
     public GroupManager Group;
 
+    public Animator anim;
+
     // Use this for initialization
     void Start()
     {
@@ -46,7 +48,14 @@ public class EnemyBasicUnit : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if (Agent.velocity == Vector3.zero)
+        {
+            anim.SetBool("Moving", false);
+        }
+        else
+        {
+            anim.SetBool("Moving", true);
+        }
     }
 
     void CheckMovement()

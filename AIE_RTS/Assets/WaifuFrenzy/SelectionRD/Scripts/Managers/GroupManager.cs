@@ -44,7 +44,7 @@ public class GroupManager : MonoBehaviour {
         {
             foreach (var element in ControlGroup1)
             {
-                element.gameObject.GetComponent<UnitManager>().Selected = true;
+                element.gameObject.GetComponent<BasicGroundUnit>().Selected = true;
             }
         }
     }

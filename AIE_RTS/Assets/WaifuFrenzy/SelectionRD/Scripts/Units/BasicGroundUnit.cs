@@ -25,6 +25,8 @@ public class BasicGroundUnit : UnitManager {
     public NavMeshAgent Agent;
 
     public GroupManager Group;
+
+    public Animator anim;
     
     // Use this for initialization
 	void Start () 
@@ -45,7 +47,20 @@ public class BasicGroundUnit : UnitManager {
     {
         CheckSelected();
         CheckMovement();
+        DoAnims();
 	}
+
+    void DoAnims()
+    {
+        if (Agent.velocity == Vector3.zero)
+        {
+            anim.SetBool("Moving", false);
+        }
+        else
+        {
+            anim.SetBool("Moving", true);
+        }
+    }
 
     protected void CheckSelected()
     {

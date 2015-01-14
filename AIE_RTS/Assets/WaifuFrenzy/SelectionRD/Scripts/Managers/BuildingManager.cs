@@ -8,11 +8,11 @@ public class BuildingManager : MonoBehaviour {
     private Camera camera;
 
     // Building to spawn
-    public GameObject BuildingMCV;
-    public GameObject BuildingMCVPrimary;
+    public GameObject Building;
+    public GameObject BuildingPrimary;
     [SerializeField]
-    public bool BuildingMCVPrimBool = false;
-    public List<GameObject> BuildingMCVList;
+    public bool BuildingPrimBool = false;
+    public List<GameObject> BuildingList;
 
     // Clone and bools to manage placing
     public GameObject Clone;
@@ -33,35 +33,23 @@ public class BuildingManager : MonoBehaviour {
 
     void OnGUI()
     {
-        // Button to create MCV building clone
-        if (GUI.Button(new Rect(Screen.width - 200, Screen.height / 2, 100, 50), "Spawn Building"))
+        // Button to create building clone
+        if (GUI.Button(new Rect(Screen.width / 2, Screen.height - 50, 100, 50), "Spawn Building"))
         {
-            Clone = Instantiate(BuildingMCV) as GameObject;
+            Clone = Instantiate(Building) as GameObject;
             CloneSpawned = true;
-            if(!BuildingMCVPrimBool)
+            if(!BuildingPrimBool)
             {
-                BuildingMCVPrimary = Clone;
-                BuildingMCVPrimBool = true;
+                BuildingPrimary = Clone;
+                BuildingPrimBool = true;
             }
         }
 
         // Button to spawn unit on primary building
-        if (BuildingMCVPrimBool)
+        if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height - 50, 100, 50), "Spawn Units"))
         {
-            if (GUI.Button(new Rect(Screen.width - 100, Screen.height / 2, 100, 50), "Spawn Units"))
-            {
-                if (BuildingMCVPrimBool)
-                    BuildingMCVPrimary.gameObject.GetComponent<SimpleBuilding>().SpawnUnit();
-            }
-        }
-
-        // Button to spawn resource building
-        if (BuildingMCVPrimBool)
-        {
-            if (GUI.Button(new Rect(Screen.width - 200, Screen.height / 2 + 50, 100, 50), "Resource"))
-            {
-                Debug.Log("Spawn resource building here");
-            }
+            if (BuildingPrimBool)
+                BuildingPrimary.gameObject.GetComponent<SimpleBuilding>().SpawnUnit();
         }
     }
 
@@ -92,8 +80,8 @@ public class BuildingManager : MonoBehaviour {
             {
                 CloneSpawned = false;
                 Clone.transform.position = new Vector3(Clone.transform.position.x, 1.0f, Clone.transform.position.z);
-                BuildingMCVList.Add(Clone);
-                BuildingMCV.gameObject.GetComponent<SimpleBuilding>().IsPlaced = true;
+                BuildingList.Add(Clone);
+                Building.gameObject.GetComponent<SimpleBuilding>().IsPlaced = true;
             }
         }
     }

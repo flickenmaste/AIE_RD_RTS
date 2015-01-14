@@ -26,17 +26,12 @@ public class EnemyBasicUnit : MonoBehaviour {
     public float FireRate = 1.0f;
     private float NextFire = 0.0f;
 
-    public GroupManager Group;
-
-    public Animator anim;
-
     // Use this for initialization
     void Start()
     {
         Health = MaxHealth;
-        //renderer.material.color = Color.red;
+        renderer.material.color = Color.red;
         GameObject eek = GameObject.FindGameObjectWithTag("Finish");
-        Group = FindObjectOfType<GroupManager>();
         Agent.SetDestination(eek.gameObject.transform.position);
     }
 
@@ -48,14 +43,7 @@ public class EnemyBasicUnit : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Agent.velocity == Vector3.zero)
-        {
-            anim.SetBool("Moving", false);
-        }
-        else
-        {
-            anim.SetBool("Moving", true);
-        }
+
     }
 
     void CheckMovement()
@@ -80,7 +68,7 @@ public class EnemyBasicUnit : MonoBehaviour {
             if (hits[i].collider.tag == "PlayerUnit")
             {
                 NextFire = Time.time + FireRate;
-                hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5, Group);
+                hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5);
             }
         }
     }

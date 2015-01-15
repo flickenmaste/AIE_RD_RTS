@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BasicGroundUnit : UnitManager {
+public class BasicAirUnit : UnitManager {
 
     // Player camera
     private Camera camera;
@@ -46,7 +46,8 @@ public class BasicGroundUnit : UnitManager {
         CheckSelected();
         CheckMovement();
 
-		if (Agent.velocity != new Vector3(0,0,0)) 
+		//A hacky fix so air units "fly over" obsticles but then avoid themselves
+		if (Agent.velocity == new Vector3(0,0,0)) 
 		{
 			Agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
 		}

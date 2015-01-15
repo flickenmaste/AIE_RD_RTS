@@ -70,6 +70,7 @@
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\BuildingManager.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\CameraManager.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\GroupManager.cs" />
+    <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicAirUnit.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicGroundUnit.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\EnemyBasicUnit.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\UnitManager.cs" />

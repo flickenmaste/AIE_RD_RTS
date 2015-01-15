@@ -55,6 +55,16 @@ public class BuildingManager : MonoBehaviour {
             }
         }
 
+		// Button to spawn unit on primary building
+		if (BuildingMCVPrimBool)
+		{
+			if (GUI.Button(new Rect(Screen.width - 100, Screen.height / 2 + 50, 100, 50), "Spawn Air Units"))
+			{
+				if (BuildingMCVPrimBool)
+					BuildingMCVPrimary.gameObject.GetComponent<SimpleBuilding>().SpawnAirUnit();
+			}
+		}
+
         // Button to spawn resource building
         if (BuildingMCVPrimBool)
         {

@@ -1,0 +1,20 @@
+Initialize engine version: 4.5.4f1 (e036f44c54c9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6350 (ID=0x68f9)
+    Vendor:   ATI
+    VRAM:     501 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\ProBuilderCore.dll (this message is harmless)
+Loading C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\ProBuilderCore.dll into Unity Child Domain
+Platform assembly: C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\SixBySeven.dll (this message is harmless)
+Loading C:\Users\kennedkj\Desktop\AIE_RD_RTS\AIE_RTS\Test_Data\Managed\SixBySeven.dll into Unity Child Domain
+- Completed reload, in  0.488 seconds
+desktop: 1920x1080 60Hz; virtual: 3000x1920 at 0,-199
+<RI> Initializing input.
+<RI> Input initialized.

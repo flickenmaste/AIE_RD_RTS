@@ -41,7 +41,7 @@ public class BuildingManager : MonoBehaviour {
 
     void OnGUI()
     {
-        if (BuildingGhost == false)
+        if (BuildingGhost == false && Time.timeScale != 0)
         {
             // Button to create MCV building clone
             if (GUI.Button(new Rect(Screen.width - 200, Screen.height / 2, 100, 50), "Spawn Building"))

@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -57,6 +57,7 @@
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\BuildingManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\CameraManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\GroupManager.cs" />
+     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\ResourceManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicGroundUnit.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\EnemyBasicUnit.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\UnitManager.cs" />
@@ -69,11 +70,14 @@
      <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor-Overlay.shader" />
      <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="ProBuilderCore">
- <HintPath>C:/Users/kennedkj/Desktop/AIE_RD_RTS/AIE_RTS/Assets/6by7/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+ <HintPath>C:/Users/kyle.kennedy/Desktop/AIE_RD_RTS/AIE_RTS/Assets/6by7/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
  </Reference>
  <Reference Include="SixBySeven">
- <HintPath>C:/Users/kennedkj/Desktop/AIE_RD_RTS/AIE_RTS/Assets/6by7/Shared/Code/SixBySeven.dll</HintPath>
+ <HintPath>C:/Users/kyle.kennedy/Desktop/AIE_RD_RTS/AIE_RTS/Assets/6by7/Shared/Code/SixBySeven.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

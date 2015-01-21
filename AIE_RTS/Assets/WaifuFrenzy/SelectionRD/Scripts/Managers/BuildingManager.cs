@@ -6,6 +6,7 @@ public class BuildingManager : MonoBehaviour {
 
     // Main camera
     private Camera camera;
+    private ResourceManager ResMan;
 
     // Building to spawn
     public GameObject BuildingMCV;
@@ -15,9 +16,7 @@ public class BuildingManager : MonoBehaviour {
     public bool BuildingMCVPrimBool = false;
     public List<GameObject> BuildingMCVList;
     public List<GameObject> BuildingResourceList;
-    public float Gold = 3000;
-    public float Income = 0;
-    public string GoldString;
+
 
     // Clone and bools to manage placing
     public GameObject Clone;
@@ -29,6 +28,7 @@ public class BuildingManager : MonoBehaviour {
 	void Start () 
     {
         camera = Camera.main;
+        ResMan = FindObjectOfType<ResourceManager>();
 	}
 	
 	// Update is called once per frame
@@ -36,7 +36,6 @@ public class BuildingManager : MonoBehaviour {
     {
         FollowCursor();
         PlaceBuilding();
-        GetGold();
 	}
 
     void OnGUI()
@@ -46,7 +45,7 @@ public class BuildingManager : MonoBehaviour {
             // Button to create MCV building clone
             if (GUI.Button(new Rect(Screen.width - 200, Screen.height / 2, 100, 50), "Spawn Building"))
             {
-                if (Gold >= 1000)
+                if (ResMan.Gold >= 1000)
                 {
                     Clone = Instantiate(BuildingMCV) as GameObject;
                     CloneSpawned = true;
@@ -64,11 +63,11 @@ public class BuildingManager : MonoBehaviour {
             {
                 if (GUI.Button(new Rect(Screen.width - 100, Screen.height / 2, 100, 50), "Spawn Units"))
                 {
-                    if (Gold >= 100)
+                    if (ResMan.Gold >= 100)
                     {
                         if (BuildingMCVPrimBool)
                             BuildingMCVPrimary.gameObject.GetComponent<SimpleBuilding>().SpawnUnit();
-                        Gold -= 100;
+                        ResMan.Gold -= 100;
                     }
                 }
             }
@@ -78,18 +77,17 @@ public class BuildingManager : MonoBehaviour {
             {
                 if (GUI.Button(new Rect(Screen.width - 200, Screen.height / 2 + 50, 100, 50), "Resource"))
                 {
-                    if (Gold >= 500)
+                    if (ResMan.Gold >= 500)
                     {
                         Clone = Instantiate(BuildingResource) as GameObject;
                         CloneSpawnedR = true;
                         BuildingGhost = true;
-                        Debug.Log("Spawn resource building here");
                     }
                 }
             }
         }
-       GoldString = "Gold: " + (int)Gold;
-       GUI.TextField(new Rect(Screen.width - 200, Screen.height / 2 - 20, 100, 20), GoldString);
+       ResMan.GoldString = "Gold: " + (int)ResMan.Gold;
+       GUI.TextField(new Rect(Screen.width - 200, Screen.height / 2 - 20, 100, 20), ResMan.GoldString); //////
     }
 
     void FollowCursor()
@@ -135,7 +133,7 @@ public class BuildingManager : MonoBehaviour {
                 Clone.transform.position = new Vector3(Clone.transform.position.x, 1.0f, Clone.transform.position.z);
                 BuildingMCVList.Add(Clone);
                 BuildingMCV.gameObject.GetComponent<SimpleBuilding>().IsPlaced = true;
-                Gold -= 1000;
+                ResMan.Gold -= 1000;
             }
             if (CloneSpawnedR)
             {
@@ -143,14 +141,11 @@ public class BuildingManager : MonoBehaviour {
                 Clone.transform.position = new Vector3(Clone.transform.position.x, 1.0f, Clone.transform.position.z);
                 BuildingResourceList.Add(Clone);
                 BuildingResource.gameObject.GetComponent<SimpleBuilding>().IsPlaced = true;
-                Income += 1;
-                Gold -= 500;
+                ResMan.Income += 1;
+                ResMan.Gold -= 500;
             }
         }
     }
 
-    void GetGold()
-    {
-        Gold += Time.deltaTime  * Income;
-    }
+  
 }

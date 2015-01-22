@@ -64,6 +64,7 @@
     <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\Materials\pb_Selection.cs" />
     <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\6by7\ProBuilder\Classes\pbVersionBridge.cs" />
+    <Compile Include="Assets\AirUnitMover.cs" />
     <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleMonster.cs" />
     <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleSpawner.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Buildings\SimpleBuilding.cs" />

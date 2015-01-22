@@ -67,6 +67,6 @@ public class SimpleBuilding : MonoBehaviour {
 	public void SpawnAirUnit()
 	{
 		GameObject clone;
-		clone = Instantiate(AirUnit, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 8), Quaternion.identity) as GameObject;
+		clone = Instantiate(AirUnit, new Vector3(this.transform.position.x, this.transform.position.y + 10, this.transform.position.z - 8), Quaternion.identity) as GameObject;
 	}
 }

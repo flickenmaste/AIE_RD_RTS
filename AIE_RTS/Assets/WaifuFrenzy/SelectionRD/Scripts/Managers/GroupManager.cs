@@ -44,7 +44,10 @@ public class GroupManager : MonoBehaviour {
         {
             foreach (var element in ControlGroup1)
             {
+				if(element.gameObject.CompareTag("PlayerUnit"))
                 element.gameObject.GetComponent<BasicGroundUnit>().Selected = true;
+				else
+				element.gameObject.GetComponent<BasicAirUnit>().Selected = true;
             }
         }
     }

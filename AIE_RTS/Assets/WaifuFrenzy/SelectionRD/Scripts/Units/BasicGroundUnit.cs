@@ -45,15 +45,6 @@ public class BasicGroundUnit : UnitManager {
     {
         CheckSelected();
         CheckMovement();
-
-		if (Agent.velocity != new Vector3(0,0,0)) 
-		{
-			Agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
-		}
-		else 
-		{
-			Agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
-		}
 	}
 
     protected void CheckSelected()

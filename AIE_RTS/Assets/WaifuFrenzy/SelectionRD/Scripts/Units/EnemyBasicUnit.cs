@@ -28,7 +28,13 @@ public class EnemyBasicUnit : MonoBehaviour {
 
     public GroupManager Group;
 
+    // Animator
     public Animator anim;
+
+    //Shooting
+    float fireRate = 1.0f;
+    private float lastShot = 0.0f;
+    public GameObject Bullet;
 
     // Use this for initialization
     void Start()
@@ -75,12 +81,14 @@ public class EnemyBasicUnit : MonoBehaviour {
         
         Collider[] hits = Physics.OverlapSphere(this.transform.position, 30.0f, LayerMask);
 
+        // Detect unit and shoot if enemy
         for (int i = 0; i < hits.Length; i++)
         {
             if (hits[i].collider.tag == "PlayerUnit")
             {
                 NextFire = Time.time + FireRate;
-                hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5, Group);
+                //hits[i].gameObject.GetComponent<UnitManager>().TakeDamage(5, Group);
+                Shoot(hits[i]);
             }
         }
     }
@@ -94,6 +102,18 @@ public class EnemyBasicUnit : MonoBehaviour {
         else if (health <= 0)
         {
             Destroy(this.gameObject, 0);
+        }
+    }
+
+    void Shoot(Collider c)
+    {
+        // If they can shoot, launch out bullet and take damage away from target
+        if (Time.time > fireRate + lastShot)
+        {
+            GameObject clone = Instantiate(Bullet, this.transform.position, Quaternion.identity) as GameObject;
+            clone.gameObject.GetComponent<Bullet>().LerpToTarget(c);
+            c.gameObject.GetComponent<UnitManager>().TakeDamage(50, Group);
+            lastShot = Time.time + fireRate;
         }
     }
 

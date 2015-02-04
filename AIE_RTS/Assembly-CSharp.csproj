@@ -51,14 +51,17 @@
      <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
      <Compile Include="Assets\6by7\ProBuilder\Classes\pbVersionBridge.cs" />
      <Compile Include="Assets\AirUnitMover.cs" />
+     <Compile Include="Assets\WaifuFrenzy\Scripts\PMenu.cs" />
      <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleMonster.cs" />
      <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleSpawner.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Buildings\SimpleBuilding.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\BuildingManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\CameraManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\GroupManager.cs" />
+     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\ResourceManager.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicAirUnit.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicGroundUnit.cs" />
+     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\Bullet.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\EnemyBasicUnit.cs" />
      <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\UnitManager.cs" />
      <None Include="Assets\6by7\ProBuilder\changelog.txt" />

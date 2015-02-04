@@ -149,15 +149,16 @@ public class BasicAirUnit : UnitManager {
 
 		//if you're not close, then get close
 		if (Distance > 10 && MadeTarget == false) {
-						pos.x += Direction.x/5;
-						pos.y += Direction.y;
-						pos.z += Direction.z/5;
+			pos.x += Direction.x * 4.0f * Time.deltaTime;
+			pos.y += Direction.y * Time.deltaTime;
+			pos.z += Direction.z * 4.0f * Time.deltaTime;
 
-						transform.position = pos;
-				} else //now that you're there stop trying to get there
-						MadeTarget = true;
+			transform.position = pos;
+			var rot = Quaternion.LookRotation(Direction);
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, 220 * Time.deltaTime);
 
-
+		} else //now that you're there stop trying to get there
+				MadeTarget = true;
 	}
 
     void DetectOthers()

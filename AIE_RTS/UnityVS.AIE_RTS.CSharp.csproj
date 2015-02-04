@@ -15,9 +15,6 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
-    <UnityVersion>4.6.0b17</UnityVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -65,18 +62,19 @@
     <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\6by7\ProBuilder\Classes\pbVersionBridge.cs" />
     <Compile Include="Assets\AirUnitMover.cs" />
+    <Compile Include="Assets\WaifuFrenzy\Scripts\PMenu.cs" />
     <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleMonster.cs" />
     <Compile Include="Assets\WaifuFrenzy\Scripts\SimpleSpawner.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Buildings\SimpleBuilding.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\BuildingManager.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\CameraManager.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\GroupManager.cs" />
+    <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Managers\ResourceManager.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicAirUnit.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\BasicGroundUnit.cs" />
+    <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\Bullet.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\EnemyBasicUnit.cs" />
     <Compile Include="Assets\WaifuFrenzy\SelectionRD\Scripts\Units\UnitManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Assets\6by7\ProBuilder\API Examples\Instantiation\README.txt" />
     <None Include="Assets\6by7\ProBuilder\changelog.txt" />
     <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
@@ -86,6 +84,8 @@
     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor.shader" />
     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor-Overlay.shader" />
     <None Include="Assets\6by7\ProBuilder\VersionInfo.txt" />
+    <None Include="Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll" />
+    <None Include="Assets\6by7\Shared\Code\SixBySeven.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

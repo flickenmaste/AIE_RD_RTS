@@ -28,6 +28,8 @@ public class SimpleBuilding : MonoBehaviour {
     // Units building spawns
     public GameObject Unit;
 	public GameObject AirUnit;
+
+    public Animator MCVAnim;
     
     // Use this for initialization
 	void Start () 
@@ -62,11 +64,13 @@ public class SimpleBuilding : MonoBehaviour {
     {
         GameObject clone;
         clone = Instantiate(Unit, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 8), Quaternion.identity) as GameObject;
+        MCVAnim.SetTrigger("Building");
     }
 
 	public void SpawnAirUnit()
 	{
 		GameObject clone;
 		clone = Instantiate(AirUnit, new Vector3(this.transform.position.x, this.transform.position.y + 10, this.transform.position.z - 8), Quaternion.identity) as GameObject;
+        MCVAnim.SetTrigger("Building");
 	}
 }
